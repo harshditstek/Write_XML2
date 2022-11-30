@@ -67,7 +67,7 @@ public class CreateXmlFileDemo {
                 Element record09 = RecordType09.getRecord09(doc);
                 document.appendChild(record09);
 
-                Element record10 = RecordType09.getRecord09(doc);
+                Element record10 = RecordType10.getRecord10(doc);
                 document.appendChild(record10);
 
                 Element record11 = RecordType09.getRecord09(doc);

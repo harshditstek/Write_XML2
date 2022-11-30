@@ -5,8 +5,6 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 public class RecordType10 {
-
-
     public static Element getRecord10(Document doc) {
         Element record10 = doc.createElement("record");
         Attr attrType = doc.createAttribute("recordType");
@@ -233,8 +231,7 @@ public class RecordType10 {
         field45.setAttribute("fieldName", "cCustomReportCondition5");
         field45.setTextContent("");
         record10.appendChild(field45);
-
-
+        
         return record10;
     }
 
