@@ -142,78 +142,78 @@ public class RecordType03 {
         record03.appendChild(field27);
 
         Element field28 = doc.createElement("field");
-        field13.setAttribute("fieldName", "cOutNetworkCoInsuranceCopay");
-        field13.setTextContent("");
+        field28.setAttribute("fieldName", "cOutNetworkCoInsuranceCopay");
+        field28.setTextContent("");
         record03.appendChild(field28);
 
         Element field29 = doc.createElement("field");
-        field14.setAttribute("fieldName", "cOutNetworkDeductibleCopay");
-        field14.setTextContent("");
+        field29.setAttribute("fieldName", "cOutNetworkDeductibleCopay");
+        field29.setTextContent("");
         record03.appendChild(field29);
 
         Element field30 = doc.createElement("field");
-        field15.setAttribute("fieldName", "cDentalPreventativeCopay");
-        field15.setTextContent("");
+        field30.setAttribute("fieldName", "cDentalPreventativeCopay");
+        field30.setTextContent("");
         record03.appendChild(field30);
 
         Element field31 = doc.createElement("field");
-        field16.setAttribute("fieldName", "cDentalBasicCopay");
-        field16.setTextContent("");
+        field31.setAttribute("fieldName", "cDentalBasicCopay");
+        field31.setTextContent("");
         record03.appendChild(field31);
 
         Element field32 = doc.createElement("field");
-        field17.setAttribute("fieldName", "cDentalMajorCopay");
-        field17.setTextContent("");
+        field32.setAttribute("fieldName", "cDentalMajorCopay");
+        field32.setTextContent("");
         record03.appendChild(field32);
 
         Element field33 = doc.createElement("field");
-        field18.setAttribute("fieldName", "cDentalCoinsuranceCopay");
-        field18.setTextContent("");
+        field33.setAttribute("fieldName", "cDentalCoinsuranceCopay");
+        field33.setTextContent("");
         record03.appendChild(field33);
 
         Element field34 = doc.createElement("field");
-        field19.setAttribute("fieldName", "cDentalDeductibleCopay");
-        field19.setTextContent("");
+        field34.setAttribute("fieldName", "cDentalDeductibleCopay");
+        field34.setTextContent("");
         record03.appendChild(field34);
 
         Element field35 = doc.createElement("field");
-        field20.setAttribute("fieldName", "cDentalYearMaxCopay");
-        field20.setTextContent("");
+        field35.setAttribute("fieldName", "cDentalYearMaxCopay");
+        field35.setTextContent("");
         record03.appendChild(field35);
 
         Element field36 = doc.createElement("field");
-        field21.setAttribute("fieldName", "cRxGenericCopay");
-        field21.setTextContent("");
+        field36.setAttribute("fieldName", "cRxGenericCopay");
+        field36.setTextContent("");
         record03.appendChild(field36);
 
         Element field37 = doc.createElement("field");
-        field22.setAttribute("fieldName", "cRxPreferredCopay");
-        field22.setTextContent("");
+        field37.setAttribute("fieldName", "cRxPreferredCopay");
+        field37.setTextContent("");
         record03.appendChild(field37);
 
         Element field38 = doc.createElement("field");
-        field23.setAttribute("fieldName", "cRxBrandCopay");
-        field23.setTextContent("");
+        field38.setAttribute("fieldName", "cRxBrandCopay");
+        field38.setTextContent("");
         record03.appendChild(field38);
 
         Element field39 = doc.createElement("field");
-        field24.setAttribute("fieldName", "cRxMailOrderGenericCopay");
-        field24.setTextContent("");
+        field39.setAttribute("fieldName", "cRxMailOrderGenericCopay");
+        field39.setTextContent("");
         record03.appendChild(field39);
 
         Element field40 = doc.createElement("field");
-        field25.setAttribute("fieldName", "cRxMailOrderPreferredCopay");
-        field25.setTextContent("");
+        field40.setAttribute("fieldName", "cRxMailOrderPreferredCopay");
+        field40.setTextContent("");
         record03.appendChild(field40);
 
         Element field41 = doc.createElement("field");
-        field26.setAttribute("fieldName", "cRxMailOrderBrandCopay");
-        field26.setTextContent("");
+        field41.setAttribute("fieldName", "cRxMailOrderBrandCopay");
+        field41.setTextContent("");
         record03.appendChild(field41);
 
         Element field42 = doc.createElement("field");
-        field27.setAttribute("fieldName", "cOtherAmount1");
-        field27.setTextContent("");
+        field42.setAttribute("fieldName", "cOtherAmount1");
+        field42.setTextContent("");
         record03.appendChild(field42);
 
         Element field43 = doc.createElement("field");

@@ -231,7 +231,7 @@ public class RecordType10 {
         field45.setAttribute("fieldName", "cCustomReportCondition5");
         field45.setTextContent("");
         record10.appendChild(field45);
-        
+
         return record10;
     }
 

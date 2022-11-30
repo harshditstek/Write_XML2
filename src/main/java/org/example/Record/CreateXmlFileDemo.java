@@ -30,7 +30,7 @@ public class CreateXmlFileDemo {
             doc.appendChild(rootElement);
 
             formatId = doc.createElement("formatId");
-            formatId.setTextContent("001");
+            formatId.setTextContent("000");
             rootElement.appendChild(formatId);
 
             document = doc.createElement("document");
