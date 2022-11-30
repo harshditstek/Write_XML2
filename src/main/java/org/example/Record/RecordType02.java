@@ -6,7 +6,8 @@ import org.w3c.dom.Element;
 
 public class RecordType02 {
 
-        public static Element getRecord02(Document doc) {
+        public static Element getRecord02(Document doc, String[] insure) {
+
             Element record02 = doc.createElement("record");
             Attr attrType = doc.createAttribute("recordType");
             attrType.setValue(String.valueOf("02"));
@@ -142,116 +143,114 @@ public class RecordType02 {
             field27.setTextContent("");
             record02.appendChild(field27);
 
-
-
             Element field28 = doc.createElement("field");
-            field13.setAttribute("fieldName", "cPlanType5EffectiveDate");
-            field13.setTextContent("");
+            field28.setAttribute("fieldName", "cPlanType5EffectiveDate");
+            field28.setTextContent("");
             record02.appendChild(field28);
 
             Element field29 = doc.createElement("field");
-            field14.setAttribute("fieldName", "cPlanType6");
-            field14.setTextContent("");
+            field29.setAttribute("fieldName", "cPlanType6");
+            field29.setTextContent("");
             record02.appendChild(field29);
 
             Element field30 = doc.createElement("field");
-            field15.setAttribute("fieldName", "cPlanType6EffectiveDate");
-            field15.setTextContent("");
+            field30.setAttribute("fieldName", "cPlanType6EffectiveDate");
+            field30.setTextContent("");
             record02.appendChild(field30);
 
             Element field31 = doc.createElement("field");
-            field16.setAttribute("fieldName", "cOpenUse");
-            field16.setTextContent("");
+            field31.setAttribute("fieldName", "cOpenUse");
+            field31.setTextContent("");
             record02.appendChild(field31);
 
             Element field32 = doc.createElement("field");
-            field17.setAttribute("fieldName", "cDependentPrimCareName");
-            field17.setTextContent("");
+            field32.setAttribute("fieldName", "cDependentPrimCareName");
+            field32.setTextContent("");
             record02.appendChild(field32);
 
             Element field33 = doc.createElement("field");
-            field18.setAttribute("fieldName", "cDependentPrimCarePhone");
-            field18.setTextContent("");
+            field33.setAttribute("fieldName", "cDependentPrimCarePhone");
+            field33.setTextContent("");
             record02.appendChild(field33);
 
             Element field34 = doc.createElement("field");
-            field19.setAttribute("fieldName", "cDependentCardEffective");
-            field19.setTextContent("");
+            field34.setAttribute("fieldName", "cDependentCardEffective");
+            field34.setTextContent("");
             record02.appendChild(field34);
 
             Element field35 = doc.createElement("field");
-            field20.setAttribute("fieldName", "cOpenUse2");
-            field20.setTextContent("");
+            field35.setAttribute("fieldName", "cOpenUse2");
+            field35.setTextContent("");
             record02.appendChild(field35);
 
             Element field36 = doc.createElement("field");
-            field21.setAttribute("fieldName", "cOpenUse3");
-            field21.setTextContent("");
+            field36.setAttribute("fieldName", "cOpenUse3");
+            field36.setTextContent("");
             record02.appendChild(field36);
 
             Element field37 = doc.createElement("field");
-            field22.setAttribute("fieldName", "cOpenUse4");
-            field22.setTextContent("");
+            field37.setAttribute("fieldName", "cOpenUse4");
+            field37.setTextContent("");
             record02.appendChild(field37);
 
             Element field38 = doc.createElement("field");
-            field23.setAttribute("fieldName", "cOpenUse5");
-            field23.setTextContent("");
+            field38.setAttribute("fieldName", "cOpenUse5");
+            field38.setTextContent("");
             record02.appendChild(field38);
 
             Element field39 = doc.createElement("field");
-            field24.setAttribute("fieldName", "cOpenUse6");
-            field24.setTextContent("");
+            field39.setAttribute("fieldName", "cOpenUse6");
+            field39.setTextContent("");
             record02.appendChild(field39);
 
             Element field40 = doc.createElement("field");
-            field25.setAttribute("fieldName", "cDependentPrimCareAddress1");
-            field25.setTextContent("");
+            field40.setAttribute("fieldName", "cDependentPrimCareAddress1");
+            field40.setTextContent("");
             record02.appendChild(field40);
 
             Element field41 = doc.createElement("field");
-            field26.setAttribute("fieldName", "cDependentPrimCareAddress2");
-            field26.setTextContent("");
+            field41.setAttribute("fieldName", "cDependentPrimCareAddress2");
+            field41.setTextContent("");
             record02.appendChild(field41);
 
             Element field42 = doc.createElement("field");
-            field27.setAttribute("fieldName", "cDependentPrimCareAddress3");
-            field27.setTextContent("");
+            field42.setAttribute("fieldName", "cDependentPrimCareAddress3");
+            field42.setTextContent("");
             record02.appendChild(field42);
 
             Element field43 = doc.createElement("field");
-            field22.setAttribute("fieldName", "cDependentPrimCareCity");
-            field22.setTextContent("");
+            field43.setAttribute("fieldName", "cDependentPrimCareCity");
+            field43.setTextContent("");
             record02.appendChild(field43);
 
             Element field44 = doc.createElement("field");
-            field23.setAttribute("fieldName", "cDependentPrimCareState");
-            field23.setTextContent("");
+            field44.setAttribute("fieldName", "cDependentPrimCareState");
+            field44.setTextContent("");
             record02.appendChild(field44);
 
             Element field45 = doc.createElement("field");
-            field24.setAttribute("fieldName", "cDependentPrimCareZip");
-            field24.setTextContent("");
+            field45.setAttribute("fieldName", "cDependentPrimCareZip");
+            field45.setTextContent("");
             record02.appendChild(field45);
 
             Element field46 = doc.createElement("field");
-            field25.setAttribute("fieldName", "cDependentPrimCareId");
-            field25.setTextContent("");
+            field46.setAttribute("fieldName", "cDependentPrimCareId");
+            field46.setTextContent("");
             record02.appendChild(field46);
 
             Element field47 = doc.createElement("field");
-            field26.setAttribute("fieldName", "cDependentPrimCareNpi");
-            field26.setTextContent("");
+            field47.setAttribute("fieldName", "cDependentPrimCareNpi");
+            field47.setTextContent("");
             record02.appendChild(field47);
 
             Element field48 = doc.createElement("field");
-            field27.setAttribute("fieldName", "cDependentBenefitClass");
-            field27.setTextContent("");
+            field48.setAttribute("fieldName", "cDependentBenefitClass");
+            field48.setTextContent("");
             record02.appendChild(field48);
 
             Element field49 = doc.createElement("field");
-            field27.setAttribute("fieldName", "cDependentStatus");
-            field27.setTextContent("");
+            field49.setAttribute("fieldName", "cDependentStatus");
+            field49.setTextContent("");
             record02.appendChild(field49);
 
             return record02;
