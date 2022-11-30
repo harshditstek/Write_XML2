@@ -14,7 +14,7 @@ public class RecordType11 {
 
         Element field01 = doc.createElement("field");
         field01.setAttribute("fieldName", "cRecordType");
-        field01.setTextContent("02");
+        field01.setTextContent("11");
         record11.appendChild(field01);
 
         Element field2 = doc.createElement("field");

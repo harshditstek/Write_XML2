@@ -6,15 +6,15 @@ import org.w3c.dom.Element;
 
 public class RecordType06 {
 
-    public static Element getRecord01(Document doc) {
+    public static Element getRecord06(Document doc) {
         Element record06 = doc.createElement("record");
         Attr attrType = doc.createAttribute("recordType");
-        attrType.setValue(String.valueOf("06"));
+        attrType.setValue("06");
         record06.setAttributeNode(attrType);
 
         Element field01 = doc.createElement("field");
         field01.setAttribute("fieldName", "cRecordType");
-        field01.setTextContent("");
+        field01.setTextContent("06");
         record06.appendChild(field01);
 
         Element field2 = doc.createElement("field");

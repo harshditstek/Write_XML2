@@ -10,12 +10,12 @@ public class RecordType05 {
         Element record05 = doc.createElement("record");
 
         Attr attrType = doc.createAttribute("recordType");
-        attrType.setValue(String.valueOf("03"));
+        attrType.setValue(String.valueOf("05"));
         record05.setAttributeNode(attrType);
 
         Element field01 = doc.createElement("field");
         field01.setAttribute("fieldName", "cRecordType");
-        field01.setTextContent("02");
+        field01.setTextContent("05");
         record05.appendChild(field01);
 
         Element field2 = doc.createElement("field");
@@ -65,7 +65,7 @@ public class RecordType05 {
 
         Element field12 = doc.createElement("field");
         field12.setAttribute("fieldName", "cZip");
-        field12.setTextContent(" ");
+        field12.setTextContent("");
         record05.appendChild(field12);
 
         Element field13 = doc.createElement("field");

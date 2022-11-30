@@ -10,12 +10,12 @@ public class RecordType04 {
         Element record04 = doc.createElement("record");
 
         Attr attrType = doc.createAttribute("recordType");
-        attrType.setValue(String.valueOf("03"));
+        attrType.setValue("04");
         record04.setAttributeNode(attrType);
 
         Element field01 = doc.createElement("field");
         field01.setAttribute("fieldName", "cRecordType");
-        field01.setTextContent("02");
+        field01.setTextContent("04");
         record04.appendChild(field01);
 
         Element field2 = doc.createElement("field");

@@ -13,7 +13,7 @@ public class RecordType03 {
 
         Element field01 = doc.createElement("field");
         field01.setAttribute("fieldName", "cRecordType");
-        field01.setTextContent("02");
+        field01.setTextContent("03");
         record03.appendChild(field01);
 
         Element field2 = doc.createElement("field");
@@ -63,7 +63,7 @@ public class RecordType03 {
 
         Element field12 = doc.createElement("field");
         field12.setAttribute("fieldName", "cOpenUse");
-        field12.setTextContent(" ");
+        field12.setTextContent("");
         record03.appendChild(field12);
 
         Element field13 = doc.createElement("field");
@@ -217,28 +217,28 @@ public class RecordType03 {
         record03.appendChild(field42);
 
         Element field43 = doc.createElement("field");
-        field22.setAttribute("fieldName", "cOtherAmount2");
-        field22.setTextContent("");
+        field43.setAttribute("fieldName", "cOtherAmount2");
+        field43.setTextContent("");
         record03.appendChild(field43);
 
         Element field44 = doc.createElement("field");
-        field23.setAttribute("fieldName", "cOtherAmount3");
-        field23.setTextContent("");
+        field44.setAttribute("fieldName", "cOtherAmount3");
+        field44.setTextContent("");
         record03.appendChild(field44);
 
         Element field45 = doc.createElement("field");
-        field24.setAttribute("fieldName", "cOtherAmount4");
-        field24.setTextContent("");
+        field45.setAttribute("fieldName", "cOtherAmount4");
+        field45.setTextContent("");
         record03.appendChild(field45);
 
         Element field46 = doc.createElement("field");
-        field25.setAttribute("fieldName", "cOtherAmount5");
-        field25.setTextContent("");
+        field46.setAttribute("fieldName", "cOtherAmount5");
+        field46.setTextContent("");
         record03.appendChild(field46);
 
         Element field47 = doc.createElement("field");
-        field26.setAttribute("fieldName", "cOtherAmount6");
-        field26.setTextContent("");
+        field47.setAttribute("fieldName", "cOtherAmount6");
+        field47.setTextContent("");
         record03.appendChild(field47);
 
         return record03;

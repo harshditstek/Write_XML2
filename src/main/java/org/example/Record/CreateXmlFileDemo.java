@@ -40,6 +40,9 @@ public class CreateXmlFileDemo {
                 Element record00 = RecordType00.getRecord00(doc, insure.get(i));
                 document.appendChild(record00);
 
+                Element record01 = RecordType01.getRecord01(doc, insure.get(i));
+                document.appendChild(record01);
+
                 Element record02 = RecordType02.getRecord02(doc, insure.get(i));
                 document.appendChild(record02);
 
@@ -52,11 +55,26 @@ public class CreateXmlFileDemo {
                 Element record05 = RecordType05.getRecord05(doc);
                 document.appendChild(record05);
 
+                Element record06 = RecordType06.getRecord06(doc);
+                document.appendChild(record06);
+
                 Element record07 = RecordType07.getRecord07(doc);
                 document.appendChild(record07);
 
                 Element record08 = RecordType08.getRecord08(doc);
                 document.appendChild(record08);
+
+                Element record09 = RecordType09.getRecord09(doc);
+                document.appendChild(record09);
+
+                Element record10 = RecordType09.getRecord09(doc);
+                document.appendChild(record10);
+
+                Element record11 = RecordType09.getRecord09(doc);
+                document.appendChild(record11);
+
+                Element recordRC = RecordTypeRC.getRecordRC(doc);
+                document.appendChild(recordRC);
             }
 
 
@@ -65,7 +83,7 @@ public class CreateXmlFileDemo {
 
             DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MMddyy");
             LocalDateTime now = LocalDateTime.now();
-            String filePath = "/tmp/" + "BL_CHK_" + dtf.format(now) + ".xml";
+            String filePath = "/tmp/" + "999920220304R01E" + dtf.format(now) + "D11.xml";
 
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();

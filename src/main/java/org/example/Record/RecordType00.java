@@ -99,7 +99,7 @@ public class RecordType00 {
 
         Element field18 = doc.createElement("field");
         field18.setAttribute("fieldName", "cEMailAddress");
-        field18.setTextContent("");
+        field18.setTextContent(insure[9].trim());
         record00.appendChild(field18);
 
         Element field19 = doc.createElement("field");
@@ -269,8 +269,8 @@ public class RecordType00 {
         record00.appendChild(field51);
 
         Element field52 = doc.createElement("field");
-        field51.setAttribute("fieldName", "cReturnAddressLogoStyle");
-        field51.setTextContent("");
+        field52.setAttribute("fieldName", "cReturnAddressLogoStyle");
+        field52.setTextContent("");
         record00.appendChild(field52);
 
         Element field53 = doc.createElement("field");

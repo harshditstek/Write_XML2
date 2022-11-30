@@ -10,7 +10,7 @@ public class RecordType02 {
 
             Element record02 = doc.createElement("record");
             Attr attrType = doc.createAttribute("recordType");
-            attrType.setValue(String.valueOf("02"));
+            attrType.setValue("02");
             record02.setAttributeNode(attrType);
 
             Element field01 = doc.createElement("field");
@@ -65,7 +65,7 @@ public class RecordType02 {
 
             Element field12 = doc.createElement("field");
             field12.setAttribute("fieldName", "cMiddleInitial");
-            field12.setTextContent(" ");
+            field12.setTextContent("");
             record02.appendChild(field12);
 
             Element field13 = doc.createElement("field");

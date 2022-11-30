@@ -7,6 +7,7 @@ import org.w3c.dom.Element;
 public class RecordTypeRC {
 
     public static Element getRecordRC(Document doc) {
+
         Element recordRC = doc.createElement("record");
         Attr attrType = doc.createAttribute("recordType");
         attrType.setValue(String.valueOf("RC"));
@@ -14,7 +15,7 @@ public class RecordTypeRC {
 
         Element field01 = doc.createElement("field");
         field01.setAttribute("fieldName", "cRecordType");
-        field01.setTextContent("");
+        field01.setTextContent("RC");
         recordRC.appendChild(field01);
 
         Element field2 = doc.createElement("field");

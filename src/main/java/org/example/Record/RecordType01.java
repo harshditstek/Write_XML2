@@ -6,7 +6,8 @@ import org.w3c.dom.Element;
 
 public class RecordType01 {
 
-    public static Element getRecord01(Document doc) {
+    public static Element getRecord01(Document doc, String[] insure) {
+
         Element record01 = doc.createElement("record");
         Attr attrType = doc.createAttribute("recordType");
         attrType.setValue(String.valueOf("01"));
@@ -14,7 +15,7 @@ public class RecordType01 {
 
         Element field01 = doc.createElement("field");
         field01.setAttribute("fieldName", "cRecordType");
-        field01.setTextContent("00");
+        field01.setTextContent("01");
         record01.appendChild(field01);
 
         Element field2 = doc.createElement("field");
@@ -64,7 +65,7 @@ public class RecordType01 {
 
         Element field11 = doc.createElement("field");
         field11.setAttribute("fieldName", "cGroupHierarchy8");
-        field11.setTextContent(" ");
+        field11.setTextContent("");
         record01.appendChild(field11);
 
         Element field12 = doc.createElement("field");
@@ -84,7 +85,7 @@ public class RecordType01 {
 
         Element field15 = doc.createElement("field");
         field15.setAttribute("fieldName", "cEnrolleeFullName");
-        field15.setTextContent("");
+        field15.setTextContent(insure[2].trim()+" " +insure[3].trim());
         record01.appendChild(field15);
 
         Element field16 = doc.createElement("field");
@@ -94,12 +95,12 @@ public class RecordType01 {
 
         Element field17 = doc.createElement("field");
         field17.setAttribute("fieldName", "cEnrolleeFirstName");
-        field17.setTextContent("");
+        field17.setTextContent(insure[2].trim());
         record01.appendChild(field17);
 
         Element field18 = doc.createElement("field");
         field18.setAttribute("fieldName", "cEnrolleeLastName");
-        field18.setTextContent("");
+        field18.setTextContent(insure[3].trim());
         record01.appendChild(field18);
 
         Element field19 = doc.createElement("field");
@@ -119,7 +120,7 @@ public class RecordType01 {
 
         Element field22 = doc.createElement("field");
         field22.setAttribute("fieldName", "cEnrolleeSsn");
-        field22.setTextContent("");
+        field22.setTextContent(insure[1].trim());
         record01.appendChild(field22);
 
         Element field23 = doc.createElement("field");
@@ -129,7 +130,7 @@ public class RecordType01 {
 
         Element field24 = doc.createElement("field");
         field24.setAttribute("fieldName", "cEnrolleeSex");
-        field24.setTextContent("");
+        field24.setTextContent(insure[10].trim());
         record01.appendChild(field24);
 
         Element field25 = doc.createElement("field");
@@ -269,8 +270,8 @@ public class RecordType01 {
         record01.appendChild(field51);
 
         Element field52 = doc.createElement("field");
-        field51.setAttribute("fieldName", "cOpenUse2");
-        field51.setTextContent("");
+        field52.setAttribute("fieldName", "cOpenUse2");
+        field52.setTextContent("");
         record01.appendChild(field52);
 
         Element field53 = doc.createElement("field");
