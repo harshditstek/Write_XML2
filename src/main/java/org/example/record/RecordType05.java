@@ -6,7 +6,7 @@ import org.w3c.dom.Element;
 
 public class RecordType05 {
 
-    public static Element getRecord05(Document doc) {
+    public static Element getRecord05(Document doc, String[] insure) {
         Element record05 = doc.createElement("record");
 
         Attr attrType = doc.createAttribute("recordType");
@@ -30,7 +30,7 @@ public class RecordType05 {
 
         Element field4 = doc.createElement("field");
         field4.setAttribute("fieldName", "cName");
-        field4.setTextContent("");
+        field4.setTextContent(insure[2].trim()+" " +insure[3].trim());
         record05.appendChild(field4);
 
         Element field5 = doc.createElement("field");
@@ -40,7 +40,7 @@ public class RecordType05 {
 
         Element field6 = doc.createElement("field");
         field6.setAttribute("fieldName", "cAddress1");
-        field6.setTextContent("");
+        field6.setTextContent(insure[4].trim());
         record05.appendChild(field6);
 
         Element field7 = doc.createElement("field");
@@ -55,17 +55,17 @@ public class RecordType05 {
 
         Element field10 = doc.createElement("field");
         field10.setAttribute("fieldName", "cCity");
-        field10.setTextContent("");
+        field10.setTextContent(insure[6].trim());
         record05.appendChild(field10);
 
         Element field11 = doc.createElement("field");
         field11.setAttribute("fieldName", "cState");
-        field11.setTextContent("");
+        field11.setTextContent(insure[7].trim());
         record05.appendChild(field11);
 
         Element field12 = doc.createElement("field");
         field12.setAttribute("fieldName", "cZip");
-        field12.setTextContent("");
+        field12.setTextContent(insure[8].trim());
         record05.appendChild(field12);
 
         Element field13 = doc.createElement("field");

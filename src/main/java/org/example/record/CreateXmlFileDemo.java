@@ -28,7 +28,7 @@ public class CreateXmlFileDemo {
             Document doc = dBuilder.newDocument();
             Element document = null;
             Element formatId = null;
-            String[] insureData = null;
+            //String[] insureData = null;
 
             Element rootElement = doc.createElement("file");
             doc.appendChild(rootElement);
@@ -36,9 +36,12 @@ public class CreateXmlFileDemo {
             formatId = doc.createElement("formatId");
             formatId.setTextContent("000");
             rootElement.appendChild(formatId);
-            for (int ih = 0; ih < insureList.size(); ih++) {
-                int i=ih;
-                insureData = insureList.get(ih);
+            int i=0;
+            for(String[] insureData:insureList){
+                //i++;
+           // for (int ih = 0; ih < insureList.size(); ih++) {
+               // int i=ih;
+                //insureData = insureList.get(ih);
 
                 document = doc.createElement("document");
                 rootElement.appendChild(document);
@@ -72,7 +75,7 @@ public class CreateXmlFileDemo {
                 Element record04 = RecordType04.getRecord04(doc, insureData);
                 document.appendChild(record04);
 
-                Element record05 = RecordType05.getRecord05(doc);
+                Element record05 = RecordType05.getRecord05(doc, insureData);
                 document.appendChild(record05);
 
                 Element record06 = RecordType06.getRecord06(doc);

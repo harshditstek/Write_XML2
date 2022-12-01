@@ -12,7 +12,11 @@ public class Insure {
         String file = "testdata.insure(" + Main.member + ")";
         String sql = "select IGRPNO,ISSN,IFNAM,ILNAM,IADD1,IADD2,ICITY,ISTATE,IZIP,IEMAIL,ISEX from qtemp.insure where issn='"+ssn+"'";
         List<String[]> insureList = iSeries.executeSQLByAlias(sql, alias, file);
-        CreateXmlFileDemo.writeXml(insureList);
+        if(insureList.size() <1){
+            System.out.println("Data not available");
+        }else {
+            CreateXmlFileDemo.writeXml(insureList);
+        }
         return insureList;
     }
 
@@ -21,7 +25,7 @@ public class Insure {
         String file = "testdata.insdep(" + Main.member + ")";
         String sql = "select DFNAM,DLNAM from qtemp.insdep where dessn='" + ssn + "'";
         List<String[]> insureList = iSeries.executeSQLByAlias(sql, alias, file);
-       // CreateXmlFileDemo.writeXml(insureList);
+
         return insureList;
     }
 }
