@@ -65,7 +65,7 @@ public class RecordType08 {
 
         Element field12 = doc.createElement("field");
         field12.setAttribute("fieldName", "cOpenAmount3");
-        field12.setTextContent(" ");
+        field12.setTextContent("");
         record08.appendChild(field12);
 
         Element field13 = doc.createElement("field");
