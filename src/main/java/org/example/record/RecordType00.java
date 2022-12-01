@@ -1,4 +1,4 @@
-package org.example.Record;
+package org.example.record;
 
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;

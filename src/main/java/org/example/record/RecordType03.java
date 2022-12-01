@@ -1,11 +1,12 @@
-package org.example.Record;
+package org.example.record;
 
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 public class RecordType03 {
-    public static Element getRecord03(Document doc) {
+    public static Element getRecord03(Document doc, String[] insureData) {
+
         Element record03 = doc.createElement("record");
         Attr attrType = doc.createAttribute("recordType");
         attrType.setValue(String.valueOf("03"));

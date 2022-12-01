@@ -1,4 +1,4 @@
-package org.example.Record;
+package org.example.record;
 
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
@@ -64,7 +64,7 @@ public class RecordType11 {
 
         Element field12 = doc.createElement("field");
         field12.setAttribute("fieldName", "cOpenField7");
-        field12.setTextContent(" ");
+        field12.setTextContent("");
         record11.appendChild(field12);
 
         Element field13 = doc.createElement("field");

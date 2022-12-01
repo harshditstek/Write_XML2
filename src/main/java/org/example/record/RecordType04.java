@@ -1,4 +1,4 @@
-package org.example.Record;
+package org.example.record;
 
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
@@ -6,7 +6,7 @@ import org.w3c.dom.Element;
 
 public class RecordType04 {
 
-    public static Element getRecord04(Document doc) {
+    public static Element getRecord04(Document doc, String[] insdep) {
         Element record04 = doc.createElement("record");
 
         Attr attrType = doc.createAttribute("recordType");
