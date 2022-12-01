@@ -14,8 +14,6 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 import java.io.File;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,7 +26,6 @@ public class CreateXmlFileDemo {
             Document doc = dBuilder.newDocument();
             Element document = null;
             Element formatId = null;
-            //String[] insureData = null;
 
             Element rootElement = doc.createElement("file");
             doc.appendChild(rootElement);
@@ -38,16 +35,13 @@ public class CreateXmlFileDemo {
             rootElement.appendChild(formatId);
             int i=0;
             for(String[] insureData:insureList){
-                //i++;
-           // for (int ih = 0; ih < insureList.size(); ih++) {
-               // int i=ih;
-                //insureData = insureList.get(ih);
+                i++;
 
                 document = doc.createElement("document");
                 rootElement.appendChild(document);
 
                 Attr attr = doc.createAttribute("inboundDocumentIdentifier");
-                attr.setValue(String.valueOf(i+1));
+                attr.setValue(String.valueOf(i));
                 document.setAttributeNode(attr);
 
                 Element record00 = RecordType00.getRecord00(doc, insureData);
@@ -91,8 +85,6 @@ public class CreateXmlFileDemo {
                 document.appendChild(recordRC);
             }
 
-            DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MMddyy");
-            LocalDateTime now = LocalDateTime.now();
             String filePath = "/tmp/" + "999920220304R01E584D11.xml";
 
             TransformerFactory transformerFactory = TransformerFactory.newInstance();

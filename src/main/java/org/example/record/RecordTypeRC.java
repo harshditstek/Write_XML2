@@ -20,7 +20,7 @@ public class RecordTypeRC {
 
         Element field2 = doc.createElement("field");
         field2.setAttribute("fieldName", "cRecordVersion");
-        field2.setTextContent("");
+        field2.setTextContent("1");
         recordRC.appendChild(field2);
 
         Element field3 = doc.createElement("field");

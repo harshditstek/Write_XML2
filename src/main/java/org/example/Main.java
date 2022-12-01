@@ -8,7 +8,6 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Please Wait!");
-
         if (args.length == 2) {
             member = args[0];
             ssn = args[1];
