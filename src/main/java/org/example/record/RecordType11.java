@@ -19,12 +19,12 @@ public class RecordType11 {
 
         Element field2 = doc.createElement("field");
         field2.setAttribute("fieldName", "cRecordVersion");
-        field2.setTextContent("");
+        field2.setTextContent("1");
         record11.appendChild(field2);
 
         Element field3 = doc.createElement("field");
         field3.setAttribute("fieldName", "cDocId");
-        field3.setTextContent("");
+        field3.setTextContent("1");
         record11.appendChild(field3);
 
         Element field4 = doc.createElement("field");
