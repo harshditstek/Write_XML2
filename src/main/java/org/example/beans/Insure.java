@@ -15,6 +15,7 @@ public class Insure {
         if(insureList.size() <1){
             System.out.println("Data not available");
         }else {
+        	
             CreateXmlFileDemo.writeXml(insureList);
         }
         return insureList;
