@@ -6,7 +6,7 @@ import org.w3c.dom.Element;
 
 public class RecordType08 {
 
-    public static Element getRecord08(Document doc) {
+    public static Element getRecord08(Document doc, String[] insureData) {
         Element record08 = doc.createElement("record");
 
         Attr attrType = doc.createAttribute("recordType");

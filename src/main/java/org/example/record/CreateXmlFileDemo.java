@@ -33,83 +33,97 @@ public class CreateXmlFileDemo {
             formatId = doc.createElement("formatId");
             formatId.setTextContent("000");
             rootElement.appendChild(formatId);
-            int i=0;
-            for(String[] insureData:insureList){
-                i++;
+            int i = 0;
+            for (String[] insureData : insureList) {
 
-                document = doc.createElement("document");
-                rootElement.appendChild(document);
+                if (!insureData[11].equals(" ") || !insureData[12].equals(" ") || !insureData[13].equals(" ") || !insureData[14].equals(" ")) {
+                    i++;
 
-                Attr attr = doc.createAttribute("inboundDocumentIdentifier");
-                attr.setValue(String.valueOf(i));
-                document.setAttributeNode(attr);
+                    document = doc.createElement("document");
+                    rootElement.appendChild(document);
 
-                Element record00 = RecordType00.getRecord00(doc, insureData);
-                document.appendChild(record00);
+                    Attr attr = doc.createAttribute("inboundDocumentIdentifier");
+                    attr.setValue(String.valueOf(i));
+                    document.setAttributeNode(attr);
 
-                Element record01 = RecordType01.getRecord01(doc, insureData);
-                document.appendChild(record01);
+                    Element record00 = RecordType00.getRecord00(doc, insureData);
+                    document.appendChild(record00);
 
-                insdepList = Insure.searchInsdepData(insureData[1]);
+                    Element record01 = RecordType01.getRecord01(doc, insureData);
+                    document.appendChild(record01);
 
-                Element record02;
-                if(insdepList.size()>0){
-                    for(String[] insdep:insdepList){
-                        record02 = RecordType02.getRecordInsure02(doc, insdep);
+                    insdepList = Insure.searchInsdepData(insureData[1]);
+
+                    Element record02;
+                    if (insdepList.size() > 0) {
+                        for (String[] insdep : insdepList) {
+                            record02 = RecordType02.getRecordInsure02(doc, insdep);
+                            document.appendChild(record02);
+                        }
+                    } else {
+                        record02 = RecordType02.getRecord02(doc);
                         document.appendChild(record02);
                     }
-                }else{
-                    record02 = RecordType02.getRecord02(doc);
-                    document.appendChild(record02);
+
+                    Element record03 = RecordType03.getRecord03(doc, insureData);
+                    document.appendChild(record03);
+
+                    Element record04 = RecordType04.getRecord04(doc, insureData);
+                    document.appendChild(record04);
+
+                    Element record05 = RecordType05.getRecord05(doc, insureData);
+                    document.appendChild(record05);
+
+                    Element record06 = RecordType06.getRecord06(doc, insureData);
+                    document.appendChild(record06);
+
+                    Element record07 = RecordType07.getRecord07(doc, insureData);
+                    document.appendChild(record07);
+
+                    Element record08 = RecordType08.getRecord08(doc, insureData);
+                    document.appendChild(record08);
+
+                    Element record09 = RecordType09.getRecord09(doc, insureData);
+                    document.appendChild(record09);
+
+                    Element record10 = RecordType10.getRecord10(doc, insureData);
+                    document.appendChild(record10);
+
+                    Element record11 = RecordType11.getRecord11(doc, insureData);
+                    document.appendChild(record11);
+
+                    Element record12 = RecordType12.getRecord12(doc, insureData);
+                    document.appendChild(record12);
+
+                    Element recordRC = RecordTypeRC.getRecordRC(doc);
+                    document.appendChild(recordRC);
+
+
+                } else {
+                   // System.out.println("IINO01,IINO02,IINO03 and IINO04 is blank");
                 }
-
-                Element record03 = RecordType03.getRecord03(doc, insureData);
-                document.appendChild(record03);
-
-                Element record04 = RecordType04.getRecord04(doc, insureData);
-                document.appendChild(record04);
-
-                Element record05 = RecordType05.getRecord05(doc, insureData);
-                document.appendChild(record05);
-
-                Element record06 = RecordType06.getRecord06(doc);
-                document.appendChild(record06);
-
-                Element record07 = RecordType07.getRecord07(doc);
-                document.appendChild(record07);
-
-                Element record08 = RecordType08.getRecord08(doc);
-                document.appendChild(record08);
-
-                Element record09 = RecordType09.getRecord09(doc);
-                document.appendChild(record09);
-
-                Element record10 = RecordType10.getRecord10(doc);
-                document.appendChild(record10);
-
-                Element record11 = RecordType11.getRecord11(doc);
-                document.appendChild(record11);
-
-                Element record12 = RecordType12.getRecord12(doc);
-                document.appendChild(record12);
-
-                Element recordRC = RecordTypeRC.getRecordRC(doc);
-                document.appendChild(recordRC);
             }
 
-            String filePath = "/tmp/" + "999920220304R01E584D11.xml";
+            if (document != null) {
+                String filePath = "/tmp/" + "999920220304R01E584D11.xml";
 
-            TransformerFactory transformerFactory = TransformerFactory.newInstance();
-            Transformer transformer = transformerFactory.newTransformer();
-            DOMSource source = new DOMSource(doc);
-            StreamResult result = new StreamResult(new File(filePath));
-            transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-            transformer.setParameter(OutputKeys.INDENT, "yes");
-            transformer.setOutputProperty(OutputKeys.METHOD, "html");
-            transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
+                TransformerFactory transformerFactory = TransformerFactory.newInstance();
+                Transformer transformer = transformerFactory.newTransformer();
+                DOMSource source = new DOMSource(doc);
+                StreamResult result = new StreamResult(new File(filePath));
+                transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+                transformer.setParameter(OutputKeys.INDENT, "yes");
+                transformer.setOutputProperty(OutputKeys.METHOD, "html");
+                transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
 
-            transformer.transform(source, result);
-            System.out.println("file saved in this location: " + filePath);
+                transformer.transform(source, result);
+                StreamResult consoleResult = new StreamResult(System.out);
+                transformer.transform(source, consoleResult);
+                System.out.println("file saved in this location: " + filePath);
+
+            }else{
+                System.out.println("No data found");
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }

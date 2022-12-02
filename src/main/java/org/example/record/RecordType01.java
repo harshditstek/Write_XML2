@@ -30,12 +30,12 @@ public class RecordType01 {
 
         Element field04 = doc.createElement("field");
         field04.setAttribute("fieldName", "cGroupName");
-        field04.setTextContent("");
+        field04.setTextContent("ARCBEST CORPORATION");
         record01.appendChild(field04);
 
         Element field4 = doc.createElement("field");
         field4.setAttribute("fieldName", "cGroupHierarchy1");
-        field4.setTextContent("");
+        field4.setTextContent("");//blank
         record01.appendChild(field4);
 
         Element field5 = doc.createElement("field");
@@ -120,7 +120,7 @@ public class RecordType01 {
 
         Element field21 = doc.createElement("field");
         field21.setAttribute("fieldName", "cEnrolleeId");
-        field21.setTextContent("");
+        field21.setTextContent(insure[1]);
         record01.appendChild(field21);
 
         Element field22 = doc.createElement("field");

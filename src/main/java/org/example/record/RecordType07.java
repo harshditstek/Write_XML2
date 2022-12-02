@@ -6,7 +6,7 @@ import org.w3c.dom.Element;
 
 public class RecordType07 {
 
-    public static Element getRecord07(Document doc) {
+    public static Element getRecord07(Document doc, String[] insureData) {
         Element record07 = doc.createElement("record");
 
         Attr attrType = doc.createAttribute("recordType");
@@ -30,17 +30,17 @@ public class RecordType07 {
 
         Element field4 = doc.createElement("field");
         field4.setAttribute("fieldName", "cPageNumberStart");
-        field4.setTextContent("");
+        field4.setTextContent("0");
         record07.appendChild(field4);
 
         Element field5 = doc.createElement("field");
         field5.setAttribute("fieldName", "cPageNumberEnd");
-        field5.setTextContent("");
+        field5.setTextContent("0");
         record07.appendChild(field5);
 
         Element field6 = doc.createElement("field");
         field6.setAttribute("fieldName", "cPaperStock");
-        field6.setTextContent("");
+        field6.setTextContent("0");
         record07.appendChild(field6);
 
         Element field7 = doc.createElement("field");

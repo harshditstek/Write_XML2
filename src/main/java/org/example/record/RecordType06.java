@@ -6,7 +6,7 @@ import org.w3c.dom.Element;
 
 public class RecordType06 {
 
-    public static Element getRecord06(Document doc) {
+    public static Element getRecord06(Document doc, String[] insureData) {
         Element record06 = doc.createElement("record");
         Attr attrType = doc.createAttribute("recordType");
         attrType.setValue("06");
@@ -29,7 +29,7 @@ public class RecordType06 {
 
         Element field4 = doc.createElement("field");
         field4.setAttribute("fieldName", "cInsertIdType");
-        field4.setTextContent("");
+        field4.setTextContent(insureData[1]);
         record06.appendChild(field4);
 
         Element field5 = doc.createElement("field");
@@ -39,7 +39,7 @@ public class RecordType06 {
 
         Element field6 = doc.createElement("field");
         field6.setAttribute("fieldName", "cEliminateDuplicates");
-        field6.setTextContent("");
+        field6.setTextContent("T");
         record06.appendChild(field6);
 
         Element field7 = doc.createElement("field");

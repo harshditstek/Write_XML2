@@ -99,7 +99,7 @@ public class RecordType00 {
 
         Element field18 = doc.createElement("field");
         field18.setAttribute("fieldName", "cEMailAddress");
-        field18.setTextContent(insure[9].trim());
+        field18.setTextContent("");
         record00.appendChild(field18);
 
         Element field19 = doc.createElement("field");
@@ -114,17 +114,26 @@ public class RecordType00 {
 
         Element field21 = doc.createElement("field");
         field21.setAttribute("fieldName", "cDocumentType");
-        field21.setTextContent("");
+        field21.setTextContent("000");
         record00.appendChild(field21);
 
         Element field22 = doc.createElement("field");
         field22.setAttribute("fieldName", "cRICode");
-        field22.setTextContent("");
+        if(!insure[11].equals(" ") && !insure[12].equals(" ") && !insure[13].equals(" ") && !insure[14].equals(" ")){
+            field22.setTextContent("Medical,Dental");
+        }else if(!insure[13].equals(" ") || !insure[14].equals(" ")){
+            field22.setTextContent("Dental");
+        }else if(!insure[11].equals(" ") || !insure[12].equals(" ")){
+            field22.setTextContent("Medical");
+        }else{
+            field22.setTextContent("");
+        }
+
         record00.appendChild(field22);
 
         Element field23 = doc.createElement("field");
         field23.setAttribute("fieldName", "cDeliveryType");
-        field23.setTextContent("");
+        field23.setTextContent("");//blank
         record00.appendChild(field23);
 
         Element field24 = doc.createElement("field");

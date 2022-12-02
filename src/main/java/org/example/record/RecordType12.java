@@ -6,7 +6,7 @@ import org.w3c.dom.Element;
 
 public class RecordType12 {
 
-    public static Element getRecord12(Document doc) {
+    public static Element getRecord12(Document doc, String[] insureData) {
         Element record12 = doc.createElement("record");
         Attr attrType = doc.createAttribute("recordType");
         attrType.setValue(String.valueOf("12"));
@@ -29,7 +29,7 @@ public class RecordType12 {
 
         Element field4 = doc.createElement("field");
         field4.setAttribute("fieldName", "cObjectStore");
-        field4.setTextContent("");
+        field4.setTextContent("Null");
         record12.appendChild(field4);
 
         Element field5 = doc.createElement("field");

@@ -33,7 +33,7 @@ public class RecordType03 {
 
         Element field5 = doc.createElement("field");
         field5.setAttribute("fieldName", "cPlanType");
-        field5.setTextContent("");
+        field5.setTextContent("O");
         record03.appendChild(field5);
 
         Element field6 = doc.createElement("field");
@@ -53,7 +53,7 @@ public class RecordType03 {
 
         Element field10 = doc.createElement("field");
         field10.setAttribute("fieldName", "cNetworkCode");
-        field10.setTextContent("");
+        field10.setTextContent("CIGN");
         record03.appendChild(field10);
 
         Element field11 = doc.createElement("field");
