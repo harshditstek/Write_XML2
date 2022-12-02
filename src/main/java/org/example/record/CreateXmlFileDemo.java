@@ -117,8 +117,8 @@ public class CreateXmlFileDemo {
                 transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
 
                 transformer.transform(source, result);
-                StreamResult consoleResult = new StreamResult(System.out);
-                transformer.transform(source, consoleResult);
+//                StreamResult consoleResult = new StreamResult(System.out);
+//                transformer.transform(source, consoleResult);
                 System.out.println("file saved in this location: " + filePath);
 
             }else{
