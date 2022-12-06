@@ -6,30 +6,15 @@ import org.w3c.dom.Element;
 
 public class RecordType06 {
 
-    public static Element getRecord06(Document doc, String[] insureData) {
+    public static Element getRecord06(Document doc, String [] insureData) {
         Element record06 = doc.createElement("record");
         Attr attrType = doc.createAttribute("recordType");
         attrType.setValue("06");
         record06.setAttributeNode(attrType);
 
-        Element field01 = doc.createElement("field");
-        field01.setAttribute("fieldName", "cRecordType");
-        field01.setTextContent("06");
-        record06.appendChild(field01);
-
-        Element field2 = doc.createElement("field");
-        field2.setAttribute("fieldName", "cRecordVersion");
-        field2.setTextContent("1");
-        record06.appendChild(field2);
-
-        Element field3 = doc.createElement("field");
-        field3.setAttribute("fieldName", "cDocId");
-        field3.setTextContent("1");
-        record06.appendChild(field3);
-
         Element field4 = doc.createElement("field");
         field4.setAttribute("fieldName", "cInsertIdType");
-        field4.setTextContent(insureData[1]);
+        field4.setTextContent("1");
         record06.appendChild(field4);
 
         Element field5 = doc.createElement("field");
@@ -39,23 +24,8 @@ public class RecordType06 {
 
         Element field6 = doc.createElement("field");
         field6.setAttribute("fieldName", "cEliminateDuplicates");
-        field6.setTextContent("T");
+        field6.setTextContent("");
         record06.appendChild(field6);
-
-        Element field7 = doc.createElement("field");
-        field7.setAttribute("fieldName", "cPerforationId");
-        field7.setTextContent("");
-        record06.appendChild(field7);
-
-        Element field9 = doc.createElement("field");
-        field9.setAttribute("fieldName", "cPerforationPageSelection");
-        field9.setTextContent("");
-        record06.appendChild(field9);
-
-        Element field10 = doc.createElement("field");
-        field10.setAttribute("fieldName", "cSimplexDuplex");
-        field10.setTextContent("");
-        record06.appendChild(field10);
 
         return record06;
     }

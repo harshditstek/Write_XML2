@@ -28,26 +28,6 @@ public class RecordType04 {
         field3.setTextContent("1");
         record04.appendChild(field3);
 
-        Element field4 = doc.createElement("field");
-        field4.setAttribute("fieldName", "cRxMemberId");
-        field4.setTextContent("");
-        record04.appendChild(field4);
-
-        Element field5 = doc.createElement("field");
-        field5.setAttribute("fieldName", "cRxGroup");
-        field5.setTextContent("");
-        record04.appendChild(field5);
-
-        Element field6 = doc.createElement("field");
-        field6.setAttribute("fieldName", "cRxBin");
-        field6.setTextContent("");
-        record04.appendChild(field6);
-
-        Element field7 = doc.createElement("field");
-        field7.setAttribute("fieldName", "cRxPcn");
-        field7.setTextContent("");
-        record04.appendChild(field7);
-
         return record04;
     }
 }
